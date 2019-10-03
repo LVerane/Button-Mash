@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    color: white;
+}
+#navBarBtn {
+    border: 1px solid rgb(56, 54, 54);
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+}
+.container1 {
+    border: 1px solid rgb(55, 251, 55);
+}
+.jumbotron {
+    background-color: inherit;
+}
+.card1,
+.card2,
+.card3 {
+    background-color: rgb(56, 54, 54);
+    color: white;
+    width: 18rem;
+    border: 1px solid rgb(55, 251, 55);
+}
