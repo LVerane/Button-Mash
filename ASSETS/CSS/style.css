@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+.card-title {
+    color: #28a745;
+    font-size: 15px;
+}
+
+#navForm {
+    width: 500px;
+}
+
+#navInput {
+    width: 418px;
+}
+
+#button {
+    background-color: lightgray;
+    color: black;
+}
+
+.container1 {
+    border: 1px solid #28a745;
+}
+
+
+
+.card-body {
+    background-color: #343a40;
+}
+
+.card, .card1, .card2, .card3 {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #28a745;
+}
+
+.navbarDropdown {
+    background-color: #28a745;
+    color: white;
+}
+
