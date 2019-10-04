@@ -5,6 +5,10 @@ body {
     font-size: 12px;
 }
 
+#styledImg {
+    width: 100%;
+}
+
 .card-title {
     color: #28a745;
     font-size: 15px;
@@ -24,19 +28,21 @@ body {
 }
 
 .container1 {
-    border: 1px solid #28a745;
+    width: 100%;
 }
-
-
 
 .card-body {
     background-color: #343a40;
 }
 
-.card, .card1, .card2, .card3 {
+.card,
+.card1,
+.card2,
+.card3 {
     background-color: #343a40;
     color: white;
     border: 1px solid #28a745;
+    width: 100%;
 }
 
 .navbarDropdown {
@@ -44,7 +50,6 @@ body {
     color: white;
 }
 
-#imageClips{
+#imageClips {
     width: 100%;
 }
-
