@@ -29,6 +29,16 @@ function getInfo() {
         console.log("got response from info");
         console.log(response)
 
+        platforms = $("<p>").text("Available for ")
+        for(var i=0; i<response.platforms.length; i++){
+            platforms.append(response.platforms[i].platform.name)
+            if(i < (response.platforms.length - 2)){
+                platforms.append(", ")
+            }else if(i === (response.platforms.length - 2)){
+                platforms.append(" and ")
+            }
+        }
+
         averageRating = $(`<p>`).text(`Average RAWG Rating: ${response.rating}`)
         oficialName = response.slug
 
@@ -45,9 +55,10 @@ function getInfo() {
 
         website.html(imageWeb);
 
+        $("#platforms").html(platforms)
         $("#about").text(response.name)
         $("#game-image").html(website)
-        $("#game-info").text(response.description)
+        $("#game-info").html(response.description)
         $("#reddit").html(reddit)
         $("#metacritic").html(metacritic)
         $("#average-rating").html(averageRating)
