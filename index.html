@@ -10,77 +10,73 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- My CSS -->
     <link rel="stylesheet" href="ASSETS/CSS/style.css">
 
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Button Mash</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                    <a class="nav-link" href="#">Log In <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Sign Up <span class="sr-only">(current)</span></a>
-                </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Navigation
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Chat</a>
-                    <a class="dropdown-item" href="#">Reviews</a>
-                    <a class="dropdown-item" href="#">Streams</a>
-                </div>
-            </li>
-
-            <form class="form-inline my-2 my-sm-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-lrg-0" type="submit">Search</button>
-            </form>
-        </ul>
-    </div>
-</nav>
+<!-- NAVIGATION -->
 
 <body>
-    <div class="container1">
-        <div class="float-right">
-            <div class="jumbotron">
-                <h1 class="display-4">Button Mash</h1>
-                <p class="lead">Gamer Girl bathwater not included.</p>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5">
+        <!-- <img src="ASSETS/IMAGES/groupProjectButton (1).png"> // img removed from the line below -->
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><button type="button"
+                            class="btn btn-outline-success btn-sm">HOME</button></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="logIn.html"><button type="button"
+                            class="btn btn-outline-success btn-sm">LOG IN</button></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="signUp.html"><button type="button"
+                            class="btn btn-outline-success btn-sm">SIGN UP</button></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="btn btn-outline-success btn-sm">NAVIGATION</button></a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index2.html">Chat</a> <br>
+                        <a class="dropdown-item" href="index3.html">Reviews</a> <br>
+                        <a class="dropdown-item" href="index4.html">Streams</a> <br>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-sm-0">
+                <input class="form-control mr-sm-2" id="game-id" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" id="submit" type="submit">Search</button>
+            </form>
         </div>
-    </div>
-    </div><br>
-    <div class="card1" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Streaming</h5>
-            <p class="card-text">Search for Streams</p>
-            <a href="#" class="btn btn-primary">Press A to Continue</a>
+    </nav>
+
+    <!-- BODY -->
+
+    <div class="container">
+        <h1 id="about"></h1>
+
+        <div class="row">
+            <div id="game-image" class="col-6"></div>
+            <div id="game-info" class="col-6"></div>
         </div>
-    </div>
-    <div class="card2" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Reviews</h5>
-            <p class="card-text">Search for Game Reviews</p>
-            <a href="#" class="btn btn-primary">Press A to Continue</a>
+
+        <div class="row">
+            <div id="reddit" class="col-4"></div>
+            <div id="metacritic" class="col-4"></div>
+            <div id="average-rating" class="col-4"></div>
         </div>
-    </div>
-    <div class="card3" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Chat</h5>
-            <p class="card-text">Ask questions or get real-time info</p>
-            <a href="#" class="btn btn-primary">Press A to Continue</a>
-        </div>
+
+        <h3 id="reviews"></h3>
+        <div class="row" id="game-reviews"></div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -94,8 +90,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="ASSETS/JAVASCRIPT/logic.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="ASSETS/JAVASCRIPT/logic.js"></script>
+
 </body>
 
 </html>

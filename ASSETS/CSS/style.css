@@ -1,24 +1,45 @@
 body {
     background-color: black;
     color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
 }
-#navBarBtn {
-    border: 1px solid rgb(56, 54, 54);
+
+.card-title {
+    color: #28a745;
+    font-size: 15px;
+}
+
+#navForm {
+    width: 500px;
+}
+
+#navInput {
+    width: 418px;
+}
+
+#button {
     background-color: lightgray;
     color: black;
-    padding: 10px;
 }
+
 .container1 {
-    border: 1px solid rgb(55, 251, 55);
+    border: 1px solid #28a745;
 }
-.jumbotron {
-    background-color: inherit;
+
+
+
+.card-body {
+    background-color: #343a40;
 }
-.card1,
-.card2,
-.card3 {
-    background-color: rgb(56, 54, 54);
+
+.card, .card1, .card2, .card3 {
+    background-color: #343a40;
     color: white;
-    width: 18rem;
-    border: 1px solid rgb(55, 251, 55);
+    border: 1px solid #28a745;
+}
+
+.navbarDropdown {
+    background-color: #28a745;
+    color: white;
 }
