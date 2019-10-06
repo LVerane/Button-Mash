@@ -8,6 +8,8 @@ $(document).on('click', '#twitchLink', function () {
     $("#navForm2").show();
 });
 
+
+
 var gameid;
 var streamer;
 
@@ -27,17 +29,6 @@ if (gameSearch)
 else{
     featureGame();
 }
-
-
-
-// Search Function
-$("#submit").on("click", function () {
-
-    $(".twitchInfo").empty();
-    event.preventDefault();
-    gameSearch = $("#navInput").val();
-    searchGame();
-})
 
 // If Feature Games Button was Click
 $("#feature-Game").on("click", function () {

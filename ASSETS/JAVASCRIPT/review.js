@@ -19,7 +19,6 @@ for (var i = 0; i < game.length; i++) {
 }
 urlSearch = game.join("");
 
-
 getInfo();
 
 
