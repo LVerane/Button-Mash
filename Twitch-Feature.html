@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Javascript Link  -->
-    <script src="ASSETS/JAVASCRIPT/logic.js"></script>
+    <script defer src="ASSETS/JAVASCRIPT/Twitch-JS.Js"></script>
 
     <!-- Twitch Embed  -->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
@@ -29,15 +29,11 @@
     <!-- Icon Link  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
-
 </head>
 
-<!-- NAVIGATION -->
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5">
-        <a class="navbar-brand" href="#"><img src="ASSETS/IMAGES/groupProjectButton.png"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#"><img src="assets/IMAGES/groupProjectButton.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -67,7 +63,6 @@
                     </div>
                 </li>
             </ul>-->
-
         </div>
         <div>
 
@@ -85,49 +80,30 @@
                     aria-label="Search" name="navSearch">
                 <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="submit">Search</button>
         </div>
-
-
-
     </nav>
 
+    <!-- Added for Twitch -->
+    <form>
+        <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="feature-Game">Top Games</button>
+        <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="feature-Streamer">Featured
+            Streamers</button>
+    </form>
+    <!-- Where all the information gonna be store -->
+    <div class="card">
+        <div class="card-body">
+            <div class="twitchInfo">
 
-    <!-- BODY -->
 
-    <div class="row-lg-4">
-        <div class="col-lg-4 copl-sm-12">
-            <div class="card" style="width: 18rem;">
-                <img src="ASSETS/IMAGES/groupProjectLogo.png" class="card-img-top" alt="buttomMash">
-                <div class="card-body">
-                    <p class="card-text-center">
-                        <p><img src="ASSETS/IMAGES/logInbutton.png"></p>
-                        <br>
-                        <form class="form-inline">
-                            <label class="sr-only" for="inlineFormInputName2">Email</label>
-                            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputEmail2"
-                                placeholder="email@address.com">
+            </div>
 
-                            <label class="sr-only" for="inlineFormInputGroupUsername2">Password</label>
-                            <div class="input-group mb-2 mr-sm-2">
-                                <div class="input-group-prepend">
-                                    <input type="text" class="form-control" id="inlineFormInputPassword2"
-                                        placeholder="..................">
-                                </div>
-                                <br>
-                                <div class="form-check mb-2 mr-sm-2">
-                                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                                    <label class="form-check-label" for="inlineFormCheck">
-                                        Save Game
-                                    </label>
-                                </div>
-                                <a href="index2.html" class="btn btn-outline-success btn-sm"><img
-                                        src="ASSETS/IMAGES/logoButton2.png"></a>
-                        </form>
-                </div>
+            <div id="twitch-embed">
+
+
             </div>
         </div>
     </div>
 
-    </div>
+
 
 </body>
 
