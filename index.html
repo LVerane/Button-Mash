@@ -42,8 +42,7 @@
                             class="btn btn-outline-success btn-sm">HOME</button></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="logIn.html"><button type="button"
-                            class="btn btn-outline-success btn-sm">LOG IN</button></a>
+                    <button type="button" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#loginLogo">LOG IN</button>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="signUp.html"><button type="button"
@@ -71,7 +70,7 @@
     <!-- BODY -->
 
     <div class="row no-gutters">
-        <div class="column col-lg-4 col-sm-12 px-4">
+        <div class="column col-lg-4 col-xs-12 px-4">
             <div class="card1 text-center">
                 <div class="card-body">
                     <h5 class="card-title">Chat</h5>
@@ -94,10 +93,10 @@
                 </div>
             </div>
         </div>
-        <div class="column col-lg-4 col-sm-12">
+        <div class="column col-lg-4 col-xs-12">
             <div class="card text-center">
                 <div class="card-body">
-                    <div><img id="styledImg" src="ASSETS/IMAGES/groupProjectLogo.png">
+                    <div><img id="styledImg" src="ASSETS/IMAGES/groupProjectLogoCropped.png">
                         <br>
                         <p class="card-text">Button Mash is a Gaming platform desgined to help you game better.</p>
                         <a href="index4.html" class="btn btn-outline-success btn-sm"><img src="ASSETS/IMAGES/enterButton.png"></a>
@@ -107,15 +106,51 @@
 
         </div>
 
-        <div class="column col-lg-4 col-sm-12 px-4 d-flex">
+        <div class="column col-lg-4 col-xs-12 px-4">
             <div class="card text-center">
-                <div class="card-body mb-5">
+                <div class="card-body">
                     <h5 class="card-title">Featured Games and Streamers</h5>
                     <div class="topClips"></div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+    <!-- login modal -->
+    <div id="loginLogo" class="modal card">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <img src="ASSETS/IMAGES/groupProjectLogoCropped.png" class="card-img-top" alt="buttomMash">
+        <div class="card-body">
+            <p class="card-text-center">
+                <p><img src="ASSETS/IMAGES/logInbutton.png"></p>
+
+                <form class="form-inline">
+                    <label class="sr-only" for="inlineFormInputName2">Email</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputEmail2" placeholder="email@address.com">
+
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Password</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                            <input type="text" class="form-control" id="inlineFormInputPassword2" placeholder="..................">
+                        </div>
+
+                        <div class="form-check mb-2 mr-sm-2">
+                            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                            <label class="form-check-label" for="inlineFormCheck">
+                                Save Game
+                            </label>
+                        </div>
+                        <a href="index2.html" class="btn btn-outline-success btn-sm"><img src="ASSETS/IMAGES/logoButton2.png"></a>
+                </form>
+                </div>
+        </div>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
