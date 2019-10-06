@@ -1,0 +1,89 @@
+/* For NAV-bar */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+#styledImg {
+    width: 100%;
+}
+
+.card-title {
+    color: #28a745;
+    font-size: 15px;
+}
+
+#navForm {
+    width: 500px;
+}
+
+#navInput {
+    width: 418px;
+}
+
+#button {
+    background-color: lightgray;
+    color: black;
+}
+
+.container1 {
+    width: 100%;
+}
+
+.card-body {
+    background-color: #343a40;
+}
+
+.card,
+.card1,
+.card2,
+.card3 {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #28a745;
+    width: 100%;
+}
+
+.navbarDropdown {
+    background-color: #28a745;
+    color: white;
+}
+
+
+/* For Twitch Feature HTML */
+.allchannelImage {
+    width: 25%;
+}
+
+#icon {
+    color: red;
+}
+#viewer-game-count,
+#viewer-Channel-count {
+    display: inline;
+}
+
+#twitch-embed {
+    height: 80vh;
+}
+
+.allchannelImage{
+    width: 100%;
+}
+.twitchInfo{
+    display: flex;
+    width: 100%;
+}
+#game-Container{
+    display: flex;
+    width: 25%;
+}
+
+#reviewLink, #twitchLink {
+
+  width: 205px;
+
+
+}
