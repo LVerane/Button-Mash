@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Javascript Link  -->
-    <script src="ASSETS/JAVASCRIPT/logic.js"></script>
+    <script src="ASSETS/JAVASCRIPT/review.js"></script>
 
     <!-- Twitch Embed  -->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
@@ -74,13 +74,12 @@
             <button type="button" class="btn btn-outline-success btn-sm" id="reviewLink">Game Review</button> <button
                 type="button" class="btn btn-outline-success btn-sm" id="twitchLink">Stream Game</button>
 
-            <form id="navForm1" class="form-inline my-2 my-sm-0" action="Review-Feature.html" method="GET"
-                style="display:none">
+            <form id="navForm1" class="form-inline my-2 my-sm-0" action="Review-Feature.html" method="GET">
                 <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Review Search"
                     aria-label="Search" name="navSearch">
                 <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="submit">Search</button>
             </form>
-            <form id="navForm2" class="form-inline my-2 my-sm-0" action="Twitch-Feature.html" method="GET">
+            <form id="navForm2" class="form-inline my-2 my-sm-0" action="Twitch-Feature.html" method="GET" style="display:none">
                 <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Stream Search"
                     aria-label="Search" name="navSearch">
                 <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="submit">Search</button>
@@ -90,44 +89,25 @@
 
     </nav>
 
+    <div class="container">
+        <h1 id="about"></h1>
 
-    <!-- BODY -->
-
-    <div class="row-lg-4">
-        <div class="col-lg-4 copl-sm-12">
-            <div class="card" style="width: 18rem;">
-                <img src="ASSETS/IMAGES/groupProjectLogo.png" class="card-img-top" alt="buttomMash">
-                <div class="card-body">
-                    <p class="card-text-center">
-                        <p><img src="ASSETS/IMAGES/logInbutton.png"></p>
-                        <br>
-                        <form class="form-inline">
-                            <label class="sr-only" for="inlineFormInputName2">Email</label>
-                            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputEmail2"
-                                placeholder="email@address.com">
-
-                            <label class="sr-only" for="inlineFormInputGroupUsername2">Password</label>
-                            <div class="input-group mb-2 mr-sm-2">
-                                <div class="input-group-prepend">
-                                    <input type="text" class="form-control" id="inlineFormInputPassword2"
-                                        placeholder="..................">
-                                </div>
-                                <br>
-                                <div class="form-check mb-2 mr-sm-2">
-                                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                                    <label class="form-check-label" for="inlineFormCheck">
-                                        Save Game
-                                    </label>
-                                </div>
-                                <a href="index2.html" class="btn btn-outline-success btn-sm"><img
-                                        src="ASSETS/IMAGES/logoButton2.png"></a>
-                        </form>
-                </div>
-            </div>
+        <div class="row">
+            <div id="game-image" class="col-6"></div>
+            <div id="game-info" class="col-6"></div>
         </div>
+
+        <div class="row">
+            <div id="platforms" class="col-4"></div>
+            <div id="metacritic" class="col-3"></div>
+            <div id="average-rating" class="col-3"></div>
+            <div id="reddit" class="col-2"></div>
+        </div>
+
+        <h3 id="reviews"></h3>
+        <div id="game-reviews"></div>
     </div>
 
-    </div>
 
 </body>
 
