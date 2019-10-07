@@ -1,5 +1,4 @@
 /* For NAV-bar */
-
 body {
     background-color: black;
     color: white;
@@ -9,8 +8,6 @@ body {
 
 #styledImg {
     width: 100%;
-    margin-top: 4.5rem;
-    margin-bottom: 4.5rem;
 }
 
 .card-title {
@@ -56,7 +53,6 @@ body {
 
 
 /* For Twitch Feature HTML */
-
 .allchannelImage {
     width: 25%;
 }
@@ -64,7 +60,6 @@ body {
 #icon {
     color: red;
 }
-
 #viewer-game-count,
 #viewer-Channel-count {
     display: inline;
@@ -74,93 +69,21 @@ body {
     height: 80vh;
 }
 
-.allchannelImage {
+.allchannelImage{
     width: 100%;
 }
-
-#loginLogo,
-#signUp {
-    background-color: #343a40;
-    width: 18rem;
-}
-
-.overlay {
-    border: 2px solid #28a745;
-    max-height: 75px;
-    overflow: hidden;
-}
-
-.topClips a {
-    color: #fff;
-}
-
-.topClips a:hover {
-    color: #28a745;
-    text-decoration: none;
-}
-
-#login-box {
-    position: relative;
-    margin: 5% auto;
-    /* background: #fff; */
-    height: 400px;
-    width: 600px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.left-box {
-    position: absolute;
-    box-sizing: border-box;
-    background: #343a40;
-    border: 1px double #28a745;
-    padding: 40px;
-    width: 300px;
-    height: 400px;
-}
-
-h1 {
-    margin: 0 0 20px 0;
-    font-weight: 300;
-    font-size: 28px;
-}
-
-input[type="text"],
-input[type="password"] {
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    padding: 4px;
-    width: 220px;
-    height: 32px;
-    border: 1px solid #28a745;
-    font-family: sans-serif;
-    font-size: 15px;
-    transition: 0.2s ease;
-}
-
-input[type="submit"] {
-    margin-bottom: 28px;
-    width: 120px;
-    height: 32px;
-    border-radius: 2px;
-    border: 1px solid #28a745;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-
-.twitchInfo {
+.twitchInfo{
     display: flex;
     width: 100%;
 }
-
-#game-Container {
+#game-Container{
     display: flex;
     width: 25%;
 }
 
-#reviewLink,
-#twitchLink {
-    width: 205px;
+#reviewLink, #twitchLink {
+
+  width: 205px;
+
+
 }
