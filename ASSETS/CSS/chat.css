@@ -21,6 +21,8 @@
 .chatwindowcontainer {
     height: 500px;
     overflow: auto;
+    display:flex;
+    flex-direction: column-reverse;
     border-style: solid;
     background-color: black;
     border-width: 2px;

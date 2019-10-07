@@ -95,5 +95,5 @@ chatConnection.on("child_added", function (childSnapshot) {
     anonyText = childSnapshot.val().text;
     var annoyColor = childSnapshot.val().textcolor;
     var newRow = $("<div>").append($("<p>").css("color", annoyColor).text(anonyName + " : " + anonyText));
-    $(".chatwindowcontainer").append(newRow);
+    $(".chatwindowcontainer").prepend(newRow);
 })
