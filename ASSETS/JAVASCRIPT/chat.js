@@ -1,20 +1,20 @@
-$(document).on('click', '#reviewLink', function () {
+$(document).on('click', '#reviewLink', function() {
     $("#navForm2").hide();
     $("#navForm1").show();
 });
 
-$(document).on('click', '#twitchLink', function () {
+$(document).on('click', '#twitchLink', function() {
     $("#navForm1").hide();
     $("#navForm2").show();
 });
 
-$(document).on('click', '#chatButton', function () {
+$(document).on('click', '#chatButton', function() {
     $("#centerLogo").hide();
     $("#mainChatBox").show();
 });
 
-let colorArray = ["#ff0000", "magneta", "blue" , "yellow", "green", "white"];
-let randomColor = Math.floor((Math.random() * 4 ) );
+let colorArray = ["#ff0000", "magneta", "blue", "yellow", "green", "white"];
+let randomColor = Math.floor((Math.random() * 4));
 let colorChoosen = colorArray[randomColor];
 
 var firebaseConfig = {
@@ -41,7 +41,7 @@ var chatConnection = database.ref("/chat");
 var connectedRef = database.ref(".info/connected");
 
 // When the client's connection state changes...
-connectedRef.on("value", function (snap) {
+connectedRef.on("value", function(snap) {
     // If they are connected..
     if (snap.val()) {
         // Add user to the connections list.
@@ -52,7 +52,7 @@ connectedRef.on("value", function (snap) {
 });
 
 // When first loaded or when the connections list changes...
-connectionsRef.on("value", function (snap) {
+connectionsRef.on("value", function(snap) {
     // Display the viewer count in the html.
     // The number of online users is the number of children in the connections list.
     $("#userinside").text("Chat with " + snap.numChildren() + " other users");
@@ -63,13 +63,13 @@ var anonyText = "Waiting for the Shout";
 
 // Disable Enter Key for this one
 $(document).keypress(
-    function(event){
-      if (event.which == '13') {
-        event.preventDefault();
-      }
-  });
+    function(event) {
+        if (event.which == '13') {
+            event.preventDefault();
+        }
+    });
 
-$(document).on("click", "#add-text", function () {
+$(document).on("click", "#add-text", function() {
     event.preventDefault();
     var name = $("#name-input").val();
     var text = $("#text-input").val();
@@ -82,7 +82,7 @@ $(document).on("click", "#add-text", function () {
     $("#text-input").val("");
 });
 
-chatConnection.on("child_added", function (childSnapshot) {
+chatConnection.on("child_added", function(childSnapshot) {
     anonyName = childSnapshot.val().name;
     anonyText = childSnapshot.val().text;
     var annoyColor = childSnapshot.val().textcolor;
