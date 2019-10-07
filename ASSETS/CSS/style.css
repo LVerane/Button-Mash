@@ -89,6 +89,8 @@ body {
 .left-box {
     position: absolute;
     box-sizing: border-box;
+    background: #343a40;
+    border: 1px double #28a745;
     padding: 40px;
     width: 300px;
     height: 400px;
@@ -108,7 +110,7 @@ input[type="password"] {
     padding: 4px;
     width: 220px;
     height: 32px;
-    border-bottom: 1px solid #28a745;
+    border: 1px solid #28a745;
     font-family: sans-serif;
     font-size: 15px;
     transition: 0.2s ease;
@@ -119,7 +121,7 @@ input[type="submit"] {
     width: 120px;
     height: 32px;
     border-radius: 2px;
-    background: #28a745;
+    border: 1px solid #28a745;
     font-family: sans-serif;
     text-transform: uppercase;
     transition: 0.2s ease;
