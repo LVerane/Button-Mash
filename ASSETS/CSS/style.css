@@ -75,6 +75,7 @@ body {
 .twitchInfo{
     display: flex;
     width: 100%;
+    
 }
 #game-Container{
     display: flex;
@@ -84,6 +85,14 @@ body {
 #reviewLink, #twitchLink {
 
   width: 205px;
+
+
+}
+
+#feature-game {
+
+    display: flex;
+    width: 100%;
 
 
 }
