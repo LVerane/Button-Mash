@@ -1,4 +1,4 @@
-$.ajax('https://api.twitch.tv/kraken/clips/top?period=week&limit=4', {
+$.ajax('https://api.twitch.tv/kraken/clips/top?period=day&trending=true&limit=4', {
     headers: {
         "Client-ID": '7lnuz8zrv8kyrdspsju9qbv8kg92tz', // put your Client-ID here
         'Accept': 'application/vnd.twitchtv.v5+json'

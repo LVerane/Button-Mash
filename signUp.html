@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="ASSETS/CSS/style.css">
 
     <!-- Popper.js, then Bootstrap JS  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     <!-- Jquery  -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Javascript Link  -->
-    <script src="ASSETS/JAVASCRIPT/frontpage.js"></script>
+    <script src="ASSETS/JAVASCRIPT/logic.js"></script>
 
 
 </head>
@@ -48,20 +48,33 @@
                     <a class="nav-link" href="signUp.html"><button type="button"
                             class="btn btn-outline-success btn-sm">SIGN UP</button></a>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <button type="button" class="btn btn-outline-success btn-sm">NAVIGATION</button></a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="index2.html">Chat</a> <br>
                         <a class="dropdown-item" href="index3.html">Reviews</a> <br>
-                        <a class="dropdown-item" href="index4.html">Streams</a> <br>
-                    </div>
-                </li>
-            </ul>
-            <form id="navForm" class="form-inline my-2 my-sm-0">
-                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit">Search</button>
+                        <a class="dropdown-item" href="index4.html">Streams</a> <br> -->
+        </div>
+        <div>
+
+
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-outline-success btn-sm" id="reviewLink" aria-pressed="true">Search Reviews</button> <button type="button" class="btn btn-outline-success btn-sm" id="twitchLink" aria-pressed="true">Search Streams</button>
+
+            <form id="navForm1" class="form-inline my-2 my-sm-0" action="Review-Feature.html" method="GET" style="display:none">
+                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Games & Reviews" aria-label="Search" name="navSearch">
+                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm active" type="submit" id="submit">Search</button>
             </form>
+            <form id="navForm2" class="form-inline my-2 my-sm-0" action="Twitch-Feature.html" method="GET">
+                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Streams & Streamers" aria-label="Search" name="navSearch">
+                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="submit">Search</button>
+                <form id="navForm" class="form-inline my-2 my-sm-0">
+                    <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit">Search</button>
+                </form>
         </div>
     </nav>
 
@@ -75,6 +88,8 @@
             <input type="password" name="password" placeholder="Password" />
             <input type="password" name="password2" placeholder="Retype Password" />
             <input type="submit" name="signup-button" value="signup" placeholder="Sign Up" />
+
+
         </div>
 
     </div>
