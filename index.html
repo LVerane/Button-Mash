@@ -6,7 +6,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- Fire base Script  -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -14,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!-- My CSS -->
     <link rel="stylesheet" href="ASSETS/CSS/style.css">
+    <link rel="stylesheet" href="ASSETS/CSS/chat.css">
 
     <!-- Jquery  -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
@@ -22,6 +25,7 @@
 
     <!-- Javascript Link  -->
     <script src="ASSETS/JAVASCRIPT/logic.js"></script>
+    <script src="ASSETS/JAVASCRIPT/chat.js"></script>
 
     <!-- Twitch Embed  -->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
@@ -36,6 +40,7 @@
 <!-- NAVIGATION -->
 
 <body>
+    <!-- UI of the Site  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5">
         <a class="navbar-brand" href="#"><img src="ASSETS/IMAGES/groupProjectButton.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -67,27 +72,26 @@
                     </div>
                 </li>
             </ul>-->
-
         </div>
-        <div>
 
-            <button type="button" class="btn btn-outline-success btn-sm" id="reviewLink">Game Review</button> <button
-                type="button" class="btn btn-outline-success btn-sm" id="twitchLink">Stream Game</button>
+        <div>
+            <button type="button" class="btn btn-outline-success btn-sm" id="reviewLink" aria-pressed="true">Search Reviews</button> <button
+                type="button" class="btn btn-outline-success btn-sm" id="twitchLink" aria-pressed="true" >Search Streams</button>
 
             <form id="navForm1" class="form-inline my-2 my-sm-0" action="Review-Feature.html" method="GET"
                 style="display:none">
-                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Review Search"
+                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Games & Reviews"
                     aria-label="Search" name="navSearch">
-                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="submit">Search</button>
+                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm active" type="submit" id="submit">Search</button>
             </form>
             <form id="navForm2" class="form-inline my-2 my-sm-0" action="Twitch-Feature.html" method="GET">
-                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Stream Search"
+                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Streams & Streamers"
                     aria-label="Search" name="navSearch">
                 <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="submit">Search</button>
         </div>
-
     </nav>
-    <!-- BODY -->
+
+    <!-- Body of the Site -->
 
     <div class="row no-gutters">
         <div class="column col-lg-4 col-sm-12 px-4">
@@ -95,8 +99,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Chat</h5>
                     <p class="card-text">Ask questions or get real-time info</p>
-                    <a href="index2.html" class="btn btn-outline-success btn-sm"><img
-                            src="ASSETS/IMAGES/enterButton.png"></a>
+                    <p id="chatButton" class="btn btn-outline-success btn-sm"><img src="ASSETS/IMAGES/enterButton.png">
+                    </p>
                 </div>
             </div>
             <div class="card2 text-center">
@@ -116,15 +120,32 @@
                 </div>
             </div>
         </div>
-        <div class="column col-lg-4 col-sm-12">
+        <div class="column col-lg-4 col-sm-12" id="centerLogo">
             <div class="card text-center">
                 <div class="card-body">
                     <div><img id="styledImg" src="ASSETS/IMAGES/groupProjectLogo.png">
                         <br>
                         <p class="card-text">Button Mash is a Gaming platform desgined to help you game better.</p>
-                        <a href="index4.html" class="btn btn-outline-success btn-sm"><img
-                                src="ASSETS/IMAGES/enterButton.png"></a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- For Chat  -->
+        <div class="column col-lg-4 col-sm-12" id="mainChatBox" style="display:none">
+            <div class="chatbox">
+                <p id="userinside"></p>
+                <div class="chatwindowcontainer"></div>
+                <div class="chat-form">
+                    <form>
+                        <div class="containerinside">
+                            <input class="form" id="name-input" type="text" placeholder="input username">
+                            <input class="form" id="text-input" type="text" placeholder="think before you type-don't be rude.">
+                            <br>
+                            <button class="btn btn-outline-success btn-block" id="add-text"
+                                type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
 
