@@ -8,12 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+=======
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+>>>>>>> master
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!-- My CSS -->
     <link rel="stylesheet" href="ASSETS/CSS/style.css">
 
+<<<<<<< HEAD
     <!-- Popper.js, then Bootstrap JS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -23,6 +29,22 @@
 
     <!-- Javascript Link  -->
     <script src="ASSETS/JAVASCRIPT/frontpage.js"></script>
+=======
+    <!-- Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Javascript Link  -->
+    <script src="ASSETS/JAVASCRIPT/logic.js"></script>
+
+    <!-- Twitch Embed  -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+>>>>>>> master
 
 
 </head>
@@ -32,7 +54,12 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5">
         <a class="navbar-brand" href="#"><img src="ASSETS/IMAGES/groupProjectButton.png"></a>
+<<<<<<< HEAD
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+=======
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+>>>>>>> master
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,24 +75,50 @@
                     <a class="nav-link" href="signUp.html"><button type="button"
                             class="btn btn-outline-success btn-sm">SIGN UP</button></a>
                 </li>
+<<<<<<< HEAD
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+=======
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+>>>>>>> master
                         <button type="button" class="btn btn-outline-success btn-sm">NAVIGATION</button></a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="index2.html">Chat</a> <br>
                         <a class="dropdown-item" href="index3.html">Reviews</a> <br>
-                        <a class="dropdown-item" href="index4.html">Streams</a> <br>
+                        <a class="dropdown-item" href="Twitch-Feature.html">Streams</a> <br>
                     </div>
                 </li>
+<<<<<<< HEAD
             </ul>
             <form id="navForm" class="form-inline my-2 my-sm-0">
                 <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit">Search</button>
-            </form>
+=======
+            </ul>-->
+
         </div>
-    </nav>
+        <div>
+
+            <button type="button" class="btn btn-outline-success btn-sm" id="reviewLink">Game Review</button> <button
+                type="button" class="btn btn-outline-success btn-sm" id="twitchLink">Stream Game</button>
+
+            <form id="navForm1" class="form-inline my-2 my-sm-0" action="Review-Feature.html" method="GET"
+                style="display:none">
+                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Review Search"
+                    aria-label="Search" name="navSearch">
+                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="submit">Search</button>
+>>>>>>> master
+            </form>
+            <form id="navForm2" class="form-inline my-2 my-sm-0" action="Twitch-Feature.html" method="GET">
+                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Stream Search"
+                    aria-label="Search" name="navSearch">
+                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="submit">Search</button>
+        </div>
 
 
+<<<<<<< HEAD
     <!-- BODY -->
     <div id="login-box">
         <div class="left-box">
@@ -125,6 +178,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+=======
+
+    </nav>
+
+>>>>>>> master
 </body>
+
+
 
 </html>

@@ -1,3 +1,5 @@
+/* For NAV-bar */
+
 body {
     background-color: black;
     color: white;
@@ -52,7 +54,27 @@ body {
     color: white;
 }
 
-#imageClips {
+
+/* For Twitch Feature HTML */
+
+.allchannelImage {
+    width: 25%;
+}
+
+#icon {
+    color: red;
+}
+
+#viewer-game-count,
+#viewer-Channel-count {
+    display: inline;
+}
+
+#twitch-embed {
+    height: 80vh;
+}
+
+.allchannelImage {
     width: 100%;
 }
 
@@ -126,4 +148,19 @@ input[type="submit"] {
     text-transform: uppercase;
     transition: 0.2s ease;
     cursor: pointer;
+}
+
+.twitchInfo {
+    display: flex;
+    width: 100%;
+}
+
+#game-Container {
+    display: flex;
+    width: 25%;
+}
+
+#reviewLink,
+#twitchLink {
+    width: 205px;
 }
