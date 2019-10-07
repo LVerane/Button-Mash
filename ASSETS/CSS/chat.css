@@ -1,7 +1,7 @@
 /* For Chat Box  */
 
 .chatbox {
-    background-color:  #343a40;
+    background-color: #343a40;
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 12px;
@@ -38,7 +38,7 @@
 
 #name-input {
     width: 28%;
-    display: inline-block; 
+    display: inline-block;
     margin-bottom: 5px;
 }
 
