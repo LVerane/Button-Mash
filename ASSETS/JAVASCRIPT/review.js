@@ -47,7 +47,7 @@ function getInfo() {
         oficialName = response.slug
 
         reddit = $(`<a>`).attr("href", response.reddit_url)
-        imageRed = $(`<img>`).attr("src", "https://via.placeholder.com/50")//will be the reddit logo
+        imageRed = $(`<img>`).attr("src", "ASSETS/IMAGES/redditLogoSmall.jpg")//will be the reddit logo
         reddit.html(imageRed)
 
 
