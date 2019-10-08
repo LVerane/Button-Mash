@@ -60,7 +60,7 @@ body {
 }
 
 #icon {
-    color: red;
+    color: #28a745;
 }
 
 #viewer-game-count,
@@ -119,7 +119,7 @@ body {
 #login-box {
     position: relative;
     margin: 5% auto;
-    /* background: #fff; */
+    
     height: 400px;
     width: 600px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -141,9 +141,7 @@ h1 {
     font-size: 28px;
 }
 
-#loginModalButton {
-    margin: .5rem;
-}
+
 
 input[type="text"],
 input[type="password"] {
