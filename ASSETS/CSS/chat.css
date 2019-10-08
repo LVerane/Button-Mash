@@ -46,6 +46,7 @@
 
 #text-input {
     width: 70%;
+    display: inline-block;
     margin-bottom: 5px;
 }
 
