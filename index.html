@@ -10,7 +10,8 @@
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!-- My CSS -->
@@ -18,7 +19,8 @@
     <link rel="stylesheet" href="ASSETS/CSS/chat.css">
 
     <!-- Jquery  -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Javascript Link  -->
@@ -29,7 +31,8 @@
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
     <!-- Icon Link  -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 
 </head>
@@ -40,7 +43,8 @@
     <!-- UI of the Site  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5">
         <a class="navbar-brand" href="#"><img src="ASSETS/IMAGES/groupProjectButton.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,34 +54,30 @@
                             class="btn btn-outline-success btn-sm">HOME</button></a>
                 </li>
                 <li class="nav-item active">
-                    <div class="pt-2" style="width: 70px;"><button type="button" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#loginLogo">LOG IN</button></div>
+                    <div class="pt-2" style="width: 70px;"><button type="button" class="btn btn-outline-success btn-sm"
+                            data-toggle="modal" data-target="#loginLogo">LOG IN</button></div>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="signUp.html"><button type="button"
                             class="btn btn-outline-success btn-sm">SIGN UP</button></a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <button type="button" class="btn btn-outline-success btn-sm">NAVIGATION</button></a>
-                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="index2.html">Chat</a> <br>
-                        <a class="dropdown-item" href="index3.html">Reviews</a> <br>
-                        <a class="dropdown-item" href="Twitch-Feature.html">Streams</a> <br>
-                    </div>
-                </li>
-            </ul>-->
         </div>
 
         <div>
-            <button type="button" class="btn btn-outline-success btn-sm" id="reviewLink" aria-pressed="true">Search Reviews</button> <button type="button" class="btn btn-outline-success btn-sm" id="twitchLink" aria-pressed="true">Search Streams</button>
+            <button type="button" class="btn btn-outline-success btn-sm" id="reviewLink" aria-pressed="true">Search
+                Reviews</button> <button type="button" class="btn btn-outline-success btn-sm" id="twitchLink"
+                aria-pressed="true">Search Streams</button>
 
-            <form id="navForm1" class="form-inline my-2 my-sm-0" action="Review-Feature.html" method="GET" style="display:none">
-                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Games & Reviews" aria-label="Search" name="navSearch">
-                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm active" type="submit" id="submit">Search</button>
+            <form id="navForm1" class="form-inline my-2 my-sm-0" action="Review-Feature.html" method="GET"
+                style="display:none">
+                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Games & Reviews"
+                    aria-label="Search" name="navSearch">
+                <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm active" type="submit"
+                    id="submit">Search</button>
             </form>
             <form id="navForm2" class="form-inline my-2 my-sm-0" action="Twitch-Feature.html" method="GET">
-                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Streams & Streamers" aria-label="Search" name="navSearch">
+                <input id="navInput" class="form-control mr-sm-2" type="search" placeholder="Streams & Streamers"
+                    aria-label="Search" name="navSearch">
                 <button class="btn btn-outline-success my-2 my-lrg-0 btn-sm" type="submit" id="submit">Search</button>
         </div>
     </nav>
@@ -98,14 +98,16 @@
                 <div class="card-body">
                     <h5 class="card-title">Reviews</h5>
                     <p class="card-text">Search for Game Reviews</p>
-                    <a href="Review-Feature.html" class="btn btn-outline-success btn-sm"><img src="ASSETS/IMAGES/enterButton.png"></a>
+                    <a href="Review-Feature.html" class="btn btn-outline-success btn-sm"><img
+                            src="ASSETS/IMAGES/enterButton.png"></a>
                 </div>
             </div>
             <div class="card3 text-center">
                 <div class="card-body">
                     <h5 class="card-title">Streams</h5>
                     <p class="card-text">View walk-throughs or live streams from a variety of Streamers and Games</p>
-                    <a href="Twitch-Feature.html" class="btn btn-outline-success btn-sm"><img src="ASSETS/IMAGES/enterButton.png"></a>
+                    <a href="Twitch-Feature.html" class="btn btn-outline-success btn-sm"><img
+                            src="ASSETS/IMAGES/enterButton.png"></a>
                 </div>
             </div>
         </div>
@@ -115,7 +117,8 @@
                     <div><img id="styledImg" src="ASSETS/IMAGES/groupProjectLogo.png">
                         <br>
                         <p class="card-text">Button Mash is a Gaming platform desgined to help you game better.</p>
-                        <a href="index4.html" class="btn btn-outline-success btn-sm"><img src="ASSETS/IMAGES/enterButton.png"></a>
+                        <a href="index4.html" class="btn btn-outline-success btn-sm"><img
+                                src="ASSETS/IMAGES/enterButton.png"></a>
                     </div>
                 </div>
             </div>
@@ -130,9 +133,11 @@
                     <form>
                         <div class="containerinside">
                             <input class="form" id="name-input" type="text" placeholder="input username">
-                            <input class="form" id="text-input" type="text" placeholder="think before you type-don't be an asshole">
+                            <input class="form" id="text-input" type="text"
+                                placeholder="think before you type-don't be an asshole">
                             <br>
-                            <button class="btn btn-outline-success btn-block" id="add-text" type="submit">Submit</button>
+                            <button class="btn btn-outline-success btn-block" id="add-text"
+                                type="submit">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -156,19 +161,21 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
-        <img src="ASSETS/IMAGES/groupProjectLogoCropped.png" class="card-img-top" alt="buttonMash">
+        <img src="ASSETS/IMAGES/groupProjectLogo.png" class="card-img-top" alt="buttonMash">
         <div class="card-body">
             <p class="card-text-center">
                 <p><img src="ASSETS/IMAGES/logInbutton.png"></p>
 
                 <form class="form-inline">
                     <label class="sr-only" for="inlineFormInputName2">Login name or Email Adress</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputEmail2" placeholder="email@address.com">
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputEmail2"
+                        placeholder="email@address.com">
 
                     <label class="sr-only" for="inlineFormInputGroupUsername2">Password</label>
                     <div class="input-group mb-2 mr-sm-2">
                         <div class="input-group-prepend">
-                            <input type="text" class="form-control" id="inlineFormInputPassword2" placeholder="..................">
+                            <input type="text" class="form-control" id="inlineFormInputPassword2"
+                                placeholder="..................">
                         </div>
 
                         <div class="form-check mb-2 mr-sm-2">
@@ -177,16 +184,23 @@
                                 Save Game
                             </label>
                         </div>
-                        <a href="index.html" class="btn btn-outline-success btn-sm"><img src="ASSETS/IMAGES/logoButton2.png"></a>
+                        <a href="index.html" class="btn btn-outline-success btn-sm"><img
+                                src="ASSETS/IMAGES/logoButton2.png"></a>
                 </form>
-                </div>
         </div>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

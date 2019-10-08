@@ -41,13 +41,17 @@
 #name-input {
     width: 28%;
     display: inline-block;
+    font-size: 10px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 #text-input {
     width: 70%;
     display: inline-block;
+    font-size: 10px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .containerinside {
