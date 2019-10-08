@@ -50,37 +50,58 @@ body {
 }
 
 /* For Twitch Feature HTML */
-
+.cardSearchgame
+{
+    max-width: 25%;
+    min-width: 25%;
+}
+.header
+{
+    padding: 30px;
+    padding-left: 0px;
+    
+}
 .allchannelImage {
-    width: 25%;
+    width: 10%;
 }
 
+#channel-image{
+    width: 100%;
+}
+.card10
+{
+    background: black;   
+    min-width: 25%;
+    max-width: 25%;
+}
+
+.card-body10{
+    padding: 5px;
+    background: black;
+}
+.card-title10{
+    color: red;
+    margin-bottom: 1px;
+}
+.card-footer10{
+    padding: 5px;
+    text-align: right;
+}
+.totheRight{
+    text-align: center;
+}
 #icon {
-    color: #28a745;
+    color: red;
 }
-
-#viewer-game-count, #viewer-Channel-count {
+#viewer-game-count,
+#viewer-Channel-count {
     display: inline;
 }
-
 #twitch-embed {
     height: 80vh;
 }
 
-.allchannelImage {
-    width: 100%;
-}
-
-.twitchInfo {
-    display: flex;
-    width: 100%;
-}
-
-#game-Container {
-    display: flex;
-    width: 25%;
-}
-
+/* Front page  */
 #reviewLink, #twitchLink {
     width: 205px;
 }

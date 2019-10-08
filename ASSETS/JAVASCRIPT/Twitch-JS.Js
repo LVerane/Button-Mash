@@ -50,20 +50,20 @@ $("#feature-Streamer").on("click", function () {
             // using loop to generate all the avaible games that user search.
             for (var i = 0; i < response.featured.length; i++) {
 
-                var cardContainer = $("<div>").attr({ class: "card channel"});
+                var cardContainer = $("<div>").attr({ class: "card card10"});
                 // streamerName will help us find a preview image for our channels;
                 var streamerName = response.featured[i].stream.channel.name.toLowerCase().split(' ').join('');
                 // generating images of the channels
                 var cardImage = $("<img>").attr({ src: "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + streamerName + ".jpg", class: "allchannelImage", id: "channel-image", userName: response.featured[i].stream.channel.name });
 
                 // channel Title                        
-                var cardtext = $("<p>").attr({ class: "card-text" }).text(response.featured[i].stream.channel.status);
+                var cardtext = $("<p>").attr({ class: "card-text card-text10" }).text(response.featured[i].stream.channel.status);
                 // Channel UserName
-                var cardtitle = $("<h5>").attr({ class: "card-title" }).text(response.featured[i].stream.channel.name);
+                var cardtitle = $("<h5>").attr({ class: "card-title card-title10" }).text(response.featured[i].stream.channel.name);
 
-                var cardbody = $("<div>").attr({ class: "card-body" })
+                var cardbody = $("<div>").attr({ class: "card-body card-body10" })
 
-                var cardFooter = $("<div>").attr({ class: "card-footer" })
+                var cardFooter = $("<div>").attr({ class: "card-footer card-footer10" })
                 // creating icon next to the viewer count
                 var iconCreate = $("<i>").attr({ class: "fas fa-user-alt", id: "icon" });
                 var viewerChannel = $("<p>").attr({ id: "viewer-Channel-count" }).text(" " + response.featured[i].stream.viewers);
@@ -105,21 +105,21 @@ $(document).on("click", ".allgameImage", function () {
             // looping 10 time to get the top 10 channels
             for (var i = 0; i < response.data.length; i++) {
 
-                var cardContainer = $("<div>").attr({ class: "card channel" });
+                var cardContainer = $("<div>").attr({ class: "card card10" });
                 // streamerName will help us find a preview image for our channels;
                 var streamerName = response.data[i].user_name.toLowerCase().split(' ').join('');
                 // generating images of the channels
                 var cardImage = $("<img>").attr({ src: "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + streamerName + ".jpg", class: "card-img-top allchannelImage", id: "channel-image", userName: response.data[i].user_name });
 
                 // channel Title                        
-                var cardtext = $("<p>").attr({ class: "card-text" }).text(response.data[i].title);
+                var cardtext = $("<p>").attr({ class: "card-text card-text10" }).text(response.data[i].title);
 
                 // Channel UserName
-                var cardtitle = $("<h5>").attr({ class: "card-title" }).text(response.data[i].user_name);
+                var cardtitle = $("<h5>").attr({ class: "card-title card-title10" }).text(response.data[i].user_name);
 
-                var cardbody = $("<div>").attr({ class: "card-body" })
+                var cardbody = $("<div>").attr({ class: "card-body card-body10" })
 
-                var cardFooter = $("<div>").attr({ class: "card-footer" })
+                var cardFooter = $("<div>").attr({ class: "card-footer card-footer10" })
                 // creating icon next to the viewer count
                 var iconCreate = $("<i>").attr({ class: "fas fa-user-alt", id: "icon" });
                 var viewerChannel = $("<p>").attr({ id: "viewer-Channel-count" }).text(response.data[i].viewer_count);
@@ -167,12 +167,12 @@ function featureGame() {
             for (var i = 0; i < response.top.length; i++) {
 
                 // new container to hold the game image and number of views
-                var cardContainer = $("<div>").attr({ class: "card" });
+                var cardContainer = $("<div>").attr({ class: "card card10" });
 
                 var cardImage = $("<img>").attr({ src: response.top[i].game.box.large, gameName: response.top[i].game.name, game_id: response.top[i].game._id, class: "card-img-top allgameImage " });
 
 
-                var cardbody = $("<div>").attr({ class: "card-body" });
+                var cardbody = $("<div>").attr({ class: "card-body card-body10" });
                 var cardtext = $("<p>").attr({ class: "card-text totheRight" });
                 var iconCreate = $("<i>").attr({ class: "fas fa-user-alt", id: "icon" });
                 // viewers count  
@@ -204,8 +204,8 @@ function searchGame() {
                 // image of the game (will be use to on-click function later)    
                 var cardImage = $("<img>").attr({ src: response.games[i].box.large, gameName: response.games[i].name, game_id: response.games[i]._id, class: "card-img-top allgameImage" });
 
-                var cardbody = $("<div>").attr({ class: "card-body" });
-                var cardtext = $("<p>").attr({ class: "card-text" });
+                var cardbody = $("<div>").attr({ class: "card-body card-body10" });
+                var cardtext = $("<p>").attr({ class: "card-text card-text10" });
                 var iconCreate = $("<i>").attr({ class: "fas fa-user-alt", id: "icon" });
                 // viewers count      
                 var viewergameCount = $("<p>").attr({ id: "viewer-game-count" }).text(response.games[i].popularity + " viewer");
@@ -217,4 +217,4 @@ function searchGame() {
                 $(".feature").append(cardContainer);
             }
         });
-    }
+}
