@@ -77,6 +77,7 @@ function showRandomGame() {
             url: randomLink,
             method: "GET",
         }).then(function (response) {
+            $("#credit-footer").attr("hidden", false)
 
             var suggestedPosition = Math.floor(Math.random() * 10)
             var randomSuggestion = response.results[suggestedPosition].slug
@@ -122,7 +123,7 @@ function getVideo() {
     }).then(function (response) {
         var videoId = response.items[0].id.videoId;
         var videoLink = "https://www.youtube.com/watch?v=" + videoId;
-        $(".trailer-link").attr("href", videoLink).text("Watch trailer");
+        $(".trailer-link").attr("href", videoLink).text("[Trailer]");
         videoSetUp();
 
     });
@@ -139,13 +140,15 @@ function videoSetUp() {
 
 function getInfo() {
     var queryURL = "https://api.rawg.io/api/games/" + urlSearch;
-    
+    $("#credit-footer").attr("hidden", false)
     
     $.ajax({
         url: queryURL,
         method: "GET",
         error: function() {
             $("#about").html(`<p>That is not a game :(</p><p>Please enter a full game name</p>`)
+            $("#credit-footer").attr("hidden", true)
+            $(".trailer-link").html("")
         }
     }).then(function (response) {
 

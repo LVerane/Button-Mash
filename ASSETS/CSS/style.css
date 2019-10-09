@@ -216,7 +216,10 @@ div[class^="random-game"]{
     color: #28a745;
 }
 
-#metacritic a, .trailer-link{
+#metacritic a{
     color: white;
     text-decoration: underline;
+}
+.trailer-link{
+    color:#28a745;
 }
