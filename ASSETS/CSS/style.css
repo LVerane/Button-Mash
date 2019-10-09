@@ -179,6 +179,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+/* for reviews feature html */
 #random-game{
     max-width: 100%;
     align-content: center;
@@ -203,5 +204,19 @@ div[class^="random-game"]{
 .game-title{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.trailer-link{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.rating{
+    color: #28a745;
+}
+
+#metacritic a, .trailer-link{
+    color: white;
+    text-decoration: underline;
 }
