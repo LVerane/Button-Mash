@@ -97,7 +97,7 @@ function showRandomGame() {
                 if (gameInfo.length > 1100) {
                     var shortInfo = gameInfo.substring(0, 1000);
                     fullInfo.push(gameInfo)
-                    var span = $("<span class='showRandom' data-position='" + countRandom + "'>[Read More]</span>")
+                    var span = $("<span class='showRandom btn-outline-success my-2 mx-2' data-position='" + countRandom + "'>[Read More]</span>")
                     $(`.random-game-${counter} .game-info`).html(shortInfo).attr("id", countRandom).append(span)
                     countRandom++;
                 }else{
@@ -145,7 +145,7 @@ function getInfo() {
         url: queryURL,
         method: "GET",
         error: function() {
-            $("#about").text("That is not a game :(")
+            $("#about").html(`<p>That is not a game :(</p><p>Please enter a full game name</p>`)
         }
     }).then(function (response) {
 
@@ -168,7 +168,7 @@ function getInfo() {
 
         metacritic = $(`<a>`).attr("href", response.metacritic_url).text(`Metacritic Score: ${response.metacritic}`)
 
-        website = $(`<a>`).attr({ "href": response.website, "target": "_blank" })
+        website = $(`<a>`).attr("href", response.website)
         imageWeb = $(`<img>`).attr("src", response.background_image)
         imageWeb.attr("class", "game-img");
 
@@ -201,13 +201,13 @@ function getReview(oficialName) {
 
         for (var i = 0; i < response.results.length; i++) {
             review = response.results[i].text
-            newPRating = $(`<p>`).text(`Rating: ${response.results[i].rating}/5`)
+            newPRating = $(`<p>`).text(`Rating: ${response.results[i].rating}/5`).attr("class", "rating")
 
             var newPReview;
             if (review.length > 600) {
                 var shortString = review.substring(0, 500);
                 fullReviews.push(review)
-                var span = $("<span class='show' data-position='" + countSearch + "'>[Read More]</span>")
+                var span = $("<span class='show btn-outline-success my-2 mx-2' data-position='" + countSearch + "'>[Read More]</span>")
                 newPReview = $(`<p>${shortString}</p>$`).attr("id", countSearch)
                 newPReview.append(span)
                 countSearch++;
@@ -224,20 +224,20 @@ function getReview(oficialName) {
 
 $(document).on("click", ".show", function () {
     var position = $(this).attr("data-position")
-    $(`#${position}`).html(fullReviews[position] + "<span class='hide' data-position='" + position + "'>[Read Less]</span>");
+    $(`#${position}`).html(fullReviews[position] + "<span class='hide btn-outline-success my-2 mx-2' data-position='" + position + "'>[Read Less]</span>");
 });
 
 $(document).on("click", ".hide", function () {
     var position = $(this).attr("data-position")
-    $(`#${position}`).html(fullReviews[position].substring(0, 500) + "<span class='show' data-position='" + position + "'>[Read More]</span>");
+    $(`#${position}`).html(fullReviews[position].substring(0, 500) + "<span class='show btn-outline-success my-2 mx-2' data-position='" + position + "'>[Read More]</span>");
 });
 
 $(document).on("click", ".showRandom", function () {
     var position = $(this).attr("data-position")
-    $(`#${position}`).html(fullInfo[position] + "<span class='hideRandom' data-position='" + position + "'>[Read Less]</span>");
+    $(`#${position}`).html(fullInfo[position] + "<span class='hideRandom btn-outline-success my-2 mx-2' data-position='" + position + "'>[Read Less]</span>");
 });
 
 $(document).on("click", ".hideRandom", function () {
     var position = $(this).attr("data-position")
-    $(`#${position}`).html(fullInfo[position].substring(0, 1000) + "<span class='showRandom' data-position='" + position + "'>[Read More]</span>");
+    $(`#${position}`).html(fullInfo[position].substring(0, 1000) + "<span class='showRandom btn-outline-success my-2 mx-2' data-position='" + position + "'>[Read More]</span>");
 });
