@@ -1,9 +1,9 @@
 # ButtonMash
 Team Member:
-1.  Tri Phan 
-2.  Tristyn K. Anderson
-3.  Samantha Covington
-4.  Lucio Verane
+1.  Tri Phan    [GitHub](https://github.com/pminhtri11)
+2.  Tristyn K. Anderson [GitHub](https://github.com/ursa-min0r)
+3.  Samantha Covington  [GitHub](https://github.com/Samcov08)
+4.  Lucio Verane  [GitHub](https://github.com/LVerane)
 
   The goal of the Web-application is to create a place for non-gamers to find differents games to play. Some of the feature its contains is Game Reviews, Stream and Streamer, and chat to talk with other users in the sites.
 
@@ -14,4 +14,3 @@ Here is a list of libraries and functions that we used in this project:
 4. RAWG API
 5. Bootstrap Liberary
 6. Jquery
-and a few other Javascript liberaries.
